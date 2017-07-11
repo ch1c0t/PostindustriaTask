@@ -1,0 +1,15 @@
+The task about a VPN gateway administrator for Postindustria.
+
+== Installation
+
+Make sure that https://docs.docker.com/compose[docker-compose] works.
+Then:
+
+[source,bash]
+----
+git clone --recursive https://github.com/ch1c0t/PostindustriaTask
+cd PostindustriaTask && docker-compose up
+----
+
+NOTE: The first time you run `docker-compose up` it will have
+to prepare all the images, which might take a few minutes.
