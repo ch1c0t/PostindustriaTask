@@ -1,6 +1,6 @@
 FROM ruby:alpine
 
-RUN apk update && apk add --no-cache build-base
+RUN apk update && apk add --no-cache build-base mariadb-dev
 
 ADD Gemfile /app/
 ADD Gemfile.lock /app/

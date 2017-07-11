@@ -20,3 +20,13 @@ services:
     build: api
     environment:
       UID: 100001
+    depends_on:
+      - db
+
+  db:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: devpass
+      MYSQL_DATABASE: devdb
