@@ -18,6 +18,10 @@ services:
     build: api
     environment:
       UID: 100001
+      DB_HOST: db
+      DB_NAME: devdb
+      DB_USER: dev
+      DB_PASS: devpass
     depends_on:
       - db
 
